@@ -1,5 +1,5 @@
 <?php 
-	$conexion=mysqli_connect('localhost','root','','general');
+	$conexion=mysqli_connect('IP_Address','User','Password','DataBase_Name');
 ?>
 
 <html>
