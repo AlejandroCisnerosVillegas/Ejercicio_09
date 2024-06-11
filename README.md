@@ -1,3 +1,3 @@
-# Ejercicio 09 
-## _Listar Datos y Mostrar Promedio de Notas en HTML y PHP_
-Vamos a resolver el siguiente ejercicio. Crear un programa que muestre la siguiente tabla, la información se obtendrá desde la base de datos <strong>general</strong>, tabla <strong>Alumnos</strong>, y se calculará el promedio de las notas.
+# Sistema de Listado de Alumnos con Promedios
+## _Área: Actividades_
+Esta actividad consiste en una aplicación web para listar y mostrar información de alumnos, incluyendo sus datos personales y calificaciones. La aplicación calcula y presenta el promedio de las notas de los estudiantes en una tabla interactiva. Este proyecto demuestra el uso de HTML, CSS y PHP para la creación de una interfaz de usuario amigable y la interacción con una base de datos MySQL.
