@@ -30,8 +30,119 @@ Esta actividad ha sido desarrollado como parte del portafolio de soluciones tecn
 
 - **Portafolio de Proyectos**: [www.alejandrovillegas.net](https://www.alejandrovillegas.net/)
 
-## 🔧 Guía de Instalación y Configuración de la Actividad
+# Guía de Instalación y Configuración
 
-1. Descargue y descomprima el archivo del proyecto en su sistema local.
+## 🖥️ Requisitos del Sistema
+
+Para ejecutar esta actividad de manera local, es necesario contar con un entorno de desarrollo que incluya Apache, MySQL y PHP. Se recomienda el uso de **XAMPP**, ya que fue el entorno con el que se desarrolló la actividad. Sin embargo, también es compatible con:
+
+- **XAMPP** (Windows, macOS, Linux)
+
+- **WAMP** (Windows)
+
+- **MAMP** (macOS, Windows)
+
+- **LAMP** (Linux)
+
+## 🔧 Instalación y Configuración de la Actividad
+
+Siga los pasos según el entorno de desarrollo que esté utilizando:
+
+### Para XAMPP (Recomendado)
+
+1. Descargue y descomprima el archivo de la actividad en su sistema local.
+
+2. Copie la carpeta de la actividad y colóquela en el directorio **_htdocs_** dentro de la carpeta de instalación de XAMPP (Ejemplo: **C:\xampp\htdocs\mi_actividad**).
+
+### Para WAMP
+
+1. Descargue y descomprima el archivo de la actividad.
+
+2. Copie la carpeta de la actividad y colóquela en el directorio **_www_** dentro de la carpeta de instalación de WAMP (Ejemplo: **C:\wamp64\www\mi_actividad**).
+
+### Para MAMP
+
+1. Descargue y descomprima el archivo de la actividad.
+
+2. Copie la carpeta de la actividad y colóquela en el directorio **_htdocs_** dentro de la carpeta de instalación de MAMP (Ejemplo: **/Applications/MAMP/htdocs/mi_actividad**).
+
+### Para LAMP
+
+1. Descargue y descomprima el archivo de la actividad.
+
+2. Mueva la carpeta de la actividad a **_/var/www/html/_** utilizando el siguiente comando en la terminal:
+
+```
+sudo mv mi_actividad /var/www/html/
+```
+
+## 🗄️ Configuración de la Base de Datos
+
+### Para XAMPP, WAMP y MAMP
+
+1. Inicie su entorno de desarrollo y asegúrese de que **Apache** y **MySQL** estén en ejecución.
+
+2. Abra su navegador y acceda a **_phpMyAdmin_** ingresando:
+
+- **XAMPP**: http://localhost/phpmyadmin
+
+- **WAMP**: http://localhost/phpmyadmin
+
+- **MAMP**: http://localhost:8888/phpmyadmin
+
+3. Diríjase a la pestaña **SQL** e ingrese el siguiente código para crear la base de datos:
+
+```
+CREATE DATABASE General;
+```
+
+4. Vaya a la pestaña Importar y seleccione el archivo **_DataBase.sql_** del repositorio para importar la estructura y los datos.
+
+### Para LAMP
+
+1. Abra la terminal y acceda a MySQL con:
+
+```
+mysql -u root -p
+```
+
+2. Cree la base de datos ejecutando:
+
+```
+CREATE DATABASE General;
+```
+
+3. Salga de MySQL y luego importe la base de datos con:
+
+```
+mysql -u root -p General < /ruta/del/archivo/DataBase.sql
+```
+
+Reemplace **_/ruta/del/archivo/_** con la ubicación real del archivo en su sistema.
+
+## 🚀 Ejecución de la Actividad
+
+1. Inicie su entorno de desarrollo:
+
+- **XAMPP**: Abra el "Panel de Control de XAMPP" y active **Apache** y **MySQL**.
+
+- **WAMP**: Haga clic en el icono de WAMP y active los servicios.
+
+- **MAMP**: Abra MAMP y haga clic en **Start Servers**.
+
+- **LAMP**: Ejecute los siguientes comandos en la terminal:
+
+```
+sudo systemctl start apache2
+sudo systemctl start mysql
+```
+
+2. Abra un navegador e ingrese la siguiente URL según el entorno:
+
+- **XAMPP / WAMP**: **_http://localhost/_**
+
+- **MAMP**: **_http://localhost:8888/_**
+
+- **LAMP**: **_http://localhost/_**
 
 La actividad ahora está funcionando en su entorno local. 🎉
